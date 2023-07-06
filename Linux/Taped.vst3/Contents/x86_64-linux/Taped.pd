@@ -1,7 +1,7 @@
-#N canvas -14 15 1920 984 10;
+#N canvas 240 114 1440 720 10;
 #X obj 4 386 *~;
 #X floatatom 22 358 5 0 0 2 dry - - 0;
-#X obj 7 4 hsl 130 20 0 1 0 0 sDryWet rDryWet Dry/Wet 5 10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 7 36 hsl 130 20 0 1 0 0 sDryWet rDryWet Dry/Wet 5 10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 22 223 - 1;
 #X obj 22 248 * -1;
 #X obj 22 273 * 2;
@@ -40,9 +40,9 @@
 #X obj 22 190 r sDryWet;
 #X obj 375 117 s rTime;
 #X obj 375 138 r sTime;
-#X obj 7 26 hsl 130 20 0 4000 0 0 sTime rTime Time 5 10 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 7 58 hsl 130 20 0 4000 0 0 sTime rTime Time 5 10 0 10 #fcfcfc #000000 #000000 0 1;
 #X msg 375 95 1000;
-#X obj 7 48 hsl 130 20 0 1 0 0 sFeedback rFeedback Feedback 5 10 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 7 80 hsl 130 20 0 1 0 0 sFeedback rFeedback Feedback 5 10 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 464 122 s rFeedback;
 #X obj 466 144 r sFeedback;
 #X obj 188 329 r sFeedback;
@@ -50,6 +50,7 @@
 #X msg 169 253 \$1 100;
 #X obj 169 278 line~;
 #X obj 169 232 r sTime;
+#X text 105 4 Taped;
 #X connect 0 0 17 0;
 #X connect 1 0 0 1;
 #X connect 1 0 11 1;
@@ -98,4 +99,4 @@
 #X connect 49 0 18 0;
 #X connect 49 0 19 0;
 #X connect 50 0 48 0;
-#X coords 0 -1 1 1 140 70 2 2 2;
+#X coords 0 -1 1 1 140 100 2 2 2;
